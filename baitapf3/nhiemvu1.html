@@ -3,20 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Thời khoá biểu học kì I - Lớp 12A</title>
+    <style>
+        /* Thêm CSS một chút để bảng đẹp và chữ căn giữa giống hệt ảnh */
+        table {
+            text-align: center;
+            border-collapse: collapse; /* Làm nét kẻ bảng liền mạch */
+            width: 100%;
+        }
+        th {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        td {
+            padding: 5px;
+        }
+        /* Class cho dòng ra chơi màu xám */
+        .break-row {
+            background-color: #999999; 
+            color: white; /* Chữ màu trắng hoặc đen tuỳ ý */
+            font-weight: bold;
+        }
+    </style>
   </head>
   <body>
-    <table border="1" cellspacing="0">
-      <tr>
-        <th width="50">&nbsp;</th>
-        <th width="50">&nbsp;</th>
-        <th width="80">Thứ Hai</th>
-        <th width="80">Thứ Ba</th>
-        <th width="80">Thứ Tư</th>
-        <th width="80">Thứ Năm</th>
-        <th width="80">Thứ Sáu</th>
+  
+    <table border="1">
+      <tr style="background-color: #d9d9d9;">
+        <th width="50"></th> <th width="50"></th> <th>Thứ Hai</th>
+        <th>Thứ Ba</th>
+        <th>Thứ Tư</th>
+        <th>Thứ Năm</th>
+        <th>Thứ Sáu</th>
       </tr>
+
       <tr>
-        <td border="1" rowspam="7">Sáng</td>
+        <td rowspan="7" style="font-weight: bold; background-color: #f2f2f2;">Sáng</td>
         <td>Tiết 1</td>
         <td>Chào cờ</td>
         <td>GDĐP</td>
@@ -24,9 +45,11 @@
         <td>GDQP</td>
         <td>Địa lí</td>
       </tr>
-      <tr>
-        <td colspan="7" align="center" bgcolor=#e0e0e0">Ra chơi 1</td>
+
+      <tr class="break-row">
+        <td colspan="6">Ra chơi 1</td>
       </tr>
+
       <tr>
         <td>Tiết 2</td>
         <td>Ngoại ngữ</td>
@@ -35,6 +58,7 @@
         <td>Tin học</td>
         <td>Địa lí</td>
       </tr>
+
       <tr>
         <td>Tiết 3</td>
         <td>Toán</td>
@@ -43,9 +67,11 @@
         <td>Tin học</td>
         <td>GDQP</td>
       </tr>
-      <tr>
-        <td colspan="7" align="center" bgcolor=#e0e0e0">Ra chơi 2</td>
+
+      <tr class="break-row">
+        <td colspan="6">Ra chơi 2</td>
       </tr>
+
       <tr>
         <td>Tiết 4</td>
         <td>Ngữ Văn</td>
@@ -54,6 +80,7 @@
         <td>Toán</td>
         <td>Toán</td>
       </tr>
+
       <tr>
         <td>Tiết 5</td>
         <td>Ngữ Văn</td>
