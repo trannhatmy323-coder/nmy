@@ -4,32 +4,48 @@
     <meta charset="utf-8">
     <title>Thời khoá biểu học kì I - Lớp 12A</title>
     <style>
-        /* Thêm CSS một chút để bảng đẹp và chữ căn giữa giống hệt ảnh */
-        table {
-            text-align: center;
-            border-collapse: collapse; /* Làm nét kẻ bảng liền mạch */
-            width: 100%;
-        }
-        th {
-            background-color: #f2f2f2;
-            padding: 10px;
-        }
-        td {
-            padding: 5px;
-        }
-        /* Class cho dòng ra chơi màu xám */
-        .break-row {
-            background-color: #999999; 
-            color: white; /* Chữ màu trắng hoặc đen tuỳ ý */
-            font-weight: bold;
-        }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      
+      td, th {
+        border: 1px solid #555; /* Viền bảng màu xám đậm */
+        padding: 8px;
+        height: 30px;
+      }
+
+      /* ĐỊNH DẠNG CỤ THỂ */
+      
+      /* 1. Tiêu đề (thẻ th): Mặc định in đậm, nền trắng */
+      th {
+        font-weight: bold; 
+        background-color: white;
+      }
+
+      /* 2. Dòng Ra chơi: Nền xám, Chữ đen, In đậm */
+      .ra-choi {
+        background-color: #bfbfbf;
+        color: black;
+        font-weight: bold;
+      }
+
+      /* 3. Cột "Sáng": In đậm */
+      .cot-sang {
+        font-weight: bold;
+      }
+
     </style>
   </head>
   <body>
-  
-    <table border="1">
-      <tr style="background-color: #d9d9d9;">
-        <th width="50"></th> <th width="50"></th> <th>Thứ Hai</th>
+
+    <table>
+      <tr>
+        <th width="80"></th> 
+        <th width="80"></th> 
+        <th>Thứ Hai</th>
         <th>Thứ Ba</th>
         <th>Thứ Tư</th>
         <th>Thứ Năm</th>
@@ -37,7 +53,7 @@
       </tr>
 
       <tr>
-        <td rowspan="7" style="font-weight: bold; background-color: #f2f2f2;">Sáng</td>
+        <td rowspan="7" class="cot-sang">Sáng</td>
         <td>Tiết 1</td>
         <td>Chào cờ</td>
         <td>GDĐP</td>
@@ -46,7 +62,7 @@
         <td>Địa lí</td>
       </tr>
 
-      <tr class="break-row">
+      <tr class="ra-choi">
         <td colspan="6">Ra chơi 1</td>
       </tr>
 
@@ -68,7 +84,7 @@
         <td>GDQP</td>
       </tr>
 
-      <tr class="break-row">
+      <tr class="ra-choi">
         <td colspan="6">Ra chơi 2</td>
       </tr>
 
@@ -76,7 +92,7 @@
         <td>Tiết 4</td>
         <td>Ngữ Văn</td>
         <td>Vật lí</td>
-        <td>Hóa học</td>
+        <td>Hoá học</td>
         <td>Toán</td>
         <td>Toán</td>
       </tr>
@@ -85,10 +101,11 @@
         <td>Tiết 5</td>
         <td>Ngữ Văn</td>
         <td>Vật lí</td>
-        <td>Hóa học</td>
+        <td>Hoá học</td>
         <td>Toán</td>
         <td>Toán</td>
       </tr>
     </table>
+
   </body>
 </html>
