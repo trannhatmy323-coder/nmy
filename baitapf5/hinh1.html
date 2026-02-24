@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Biểu mẫu thanh toán</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <h3>Phương thức thanh toán</h3>
+
+        <input type="radio" id="tien_mat" name="phuong_thuc" value="tien_mat">
+        <label for="tien_mat">Tiền mặt</label><br>
+
+        <input type="radio" id="the" name="phuong_thuc" value="the" checked>
+        <label for="the">Thẻ debit hoặc credit</label><br><br>
+
+        <label for="ten_the">Tên ghi trên thẻ:</label><br>
+        <input type="text" id="ten_the" name="ten_the" size="40"><br><br>
+
+        <label for="so_the">Số thẻ:</label><br>
+        <input type="text" id="so_the" name="so_the" size="40"><br><br>
+
+        <table>
+            <tr>
+                <td><label for="ngay_het_han">Ngày hết hạn:</label></td>
+                <td><label for="cvv">CVV:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="ngay_het_han" name="ngay_het_han" size="15"></td>
+                <td><input type="text" id="cvv" name="cvv" size="10"></td>
+            </tr>
+        </table>
+        <br>
+
+        <button type="submit">Thanh toán</button>
+    </form>
+
+</body>
+</html>
